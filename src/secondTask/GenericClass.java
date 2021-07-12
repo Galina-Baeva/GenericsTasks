@@ -1,18 +1,18 @@
 package secondTask;
 
 public class GenericClass<T> {
-    protected T one;
+    protected T t;
 
-    public GenericClass(T one) {
-        this.one = one;
+    public GenericClass(T t) {
+        this.t = t;
     }
 
-    public T getOne() {
-        return one;
+    public T getT() {
+        return t;
     }
 
-    public static <T extends Comparable<T>> boolean isEqual(T one, T two) {
-        return one.compareTo(two) == 0;
+    public static <T extends Comparable<T>> boolean isEqual(T t1, T t2) {
+        return t1.compareTo(t2) == 0;
     }
 
 }
